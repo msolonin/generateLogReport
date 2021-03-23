@@ -175,7 +175,7 @@ for log in get_path_logs(logdir, logfile):
     top_ips = get_top_ip(d_lines)
     dur_lines = get_max_duration(d_lines)
     top_client_error_lines = get_common_error(d_lines, 400, 499)
-    top_server_error_lines = get_common_error(d_lines, 500, 526)
+    top_server_error_lines = get_common_error(d_lines, 500, 526) # 500-599
 
     REPORT[CNT_REQ_KEY_REPORT] = REPORT[CNT_REQ_KEY_REPORT] + cnt
     REPORT[CNT_BY_TYPE_REQ_KEY_REPORT] = REPORT[CNT_BY_TYPE_REQ_KEY_REPORT] | req_type_cnt
